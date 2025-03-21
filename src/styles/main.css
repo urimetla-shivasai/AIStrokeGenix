@@ -1,4 +1,26 @@
-.welcome {
+body {
+    margin: 0;
+    background: linear-gradient(45deg, #ff00cc, #00ffcc, #cc00ff, #00ccff);
+    background-size: 400%;
+    animation: gradientShift 10s ease infinite;
+    overflow: hidden;
+  }
+  
+  #app {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* Ensure the p5.js canvas is transparent and doesn’t block the body */
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .welcome {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -17,6 +39,12 @@
   .welcome p {
     font-size: 1.2rem;
     margin: 5px 0 0;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
   
   @keyframes glow {
