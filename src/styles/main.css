@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    background: linear-gradient(45deg, #ff00cc, #00ffcc);
+    overflow: hidden;
+  }
+  #app {
+    width: 100vw;
+    height: 100vh;
+  }
