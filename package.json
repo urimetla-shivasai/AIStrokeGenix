@@ -5,5 +5,10 @@
       "start": "parcel public/index.html",
       "build": "parcel build public/index.html"
     },
-    "dependencies": {}
+    "dependencies": {
+      "p5": "^1.4.2"
+    },
+    "devDependencies": {
+      "parcel": "^2.8.0"
+    }
   }

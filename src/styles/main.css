@@ -1,9 +1,26 @@
-body {
-    margin: 0;
-    background: linear-gradient(45deg, #ff00cc, #00ffcc);
-    overflow: hidden;
+.welcome {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    text-shadow: 0 0 10px #ff00cc, 0 0 20px #00ffcc;
+    font-family: 'Arial', sans-serif;
+    z-index: 1;
   }
-  #app {
-    width: 100vw;
-    height: 100vh;
+  
+  .welcome h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: glow 2s ease-in-out infinite;
+  }
+  
+  .welcome p {
+    font-size: 1.2rem;
+    margin: 5px 0 0;
+  }
+  
+  @keyframes glow {
+    0% { text-shadow: 0 0 10px #ff00cc, 0 0 20px #00ffcc; }
+    50% { text-shadow: 0 0 20px #ff00cc, 0 0 30px #00ffcc; }
+    100% { text-shadow: 0 0 10px #ff00cc, 0 0 20px #00ffcc; }
   }
